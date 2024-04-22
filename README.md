@@ -1,7 +1,7 @@
 # Powershellcommands
 PowerShell AD Commands - To check who manages the AD Group (who/email)
 
-Get-ADGroup -filter {Name -like "guidewire.dev.anzapac.all.ci.developers" } -Properties managedB
+Get-ADGroup -filter {Name -like "ADGroupname" } -Properties managedB
 y |
 >> ForEach-Object {
 >> $managedBy = $_.managedBy;
